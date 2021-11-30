@@ -1,60 +1,87 @@
 export var createQuestions = {
-    "title": "Cancellation Survey",
-    "description": "Thank you for using our service. We would highly appreciate if you would take the time to fill our cancellation survey. This would help us improve the service.",
+    "title": "New Question",
+    "description": "This form helps you to create a question for a question type, including exam mode, difficulty level, question bank and tags. Tags helps you to group the questions and find it easily from a pool.",
     "pages": [
         {
             "name": "page1",
             "elements": [
                 {
                     "type": "radiogroup",
-                    "name": "using_duration",
-                    "title": "How long have you been using the service?",
-                    "choices": ["Less than a month", "1-6 months", "7-12 months", "1-3 years", "Over 3 years"]
+                    "name": "language",
+                    "title": "Language",
+                    "choices": ["English"]
                 }, {
-                    "type": "radiogroup",
-                    "name": "using_frequency",
-                    "title": "How often did you use the service?",
-                    "choices": ["Once a week", "2 or 3 times a month", "Once a month", "Less than once a month"]
-                }, {
-                    "type": "radiogroup",
-                    "name": "cancel_reason",
-                    "title": "What was the main reason for cancelling the service?",
-                    "hasOther": true,
+                    "type": "dropdown",
+                    "name": "exam_mode",
+                    "title": "Exam Mode",
+                    "choices": ["Exam", "Homework"]
+                }, 
+                {
+                    "type": "dropdown",
+                    "name": "difficulty_level",
+                    "title": "Difficulty Level",
+                    "choices": ["Easy", "Medium", "Hard"]
+                }, 
+                {
+                    "type": "dropdown",
+                    "name": "question_type",
+                    "title": "Question Type",
                     "choices": [
-                        "No longer need it",
-                        "It didn't meet my needs",
-                        "Found a better alternative",
-                        "Found a cheaper alternative",
-                        "Quality was less than expected",
-                        "Ease of use was less than expected",
-                        "Access to the service was less than expected",
-                        "Customer service was less than expected"
+                        "Multiple Choice", 
+                        "Multiple Selection", 
+                        "Fill In The Blanks",
+                        "Yes/No or True/False",
+                        "Descriptive",
+                        "Passage Based",
+                        "Audio Based",
+                        "Video Based",
+                        "Short Answer"
                     ]
-                }, {
-                    "type": "radiogroup",
-                    "name": "satisfaction",
-                    "title": "Overall, how satisfied were you with the service?",
-                    "choices": ["Very Satisfied", "Satisfied", "Neutral", "Unsatisfied", "Very Unsatisfied"]
-                }, {
-                    "type": "matrix",
-                    "name": "future_using",
-                    "titleLocation": "hidden",
-                    "columns": [
-                        "Definitely", "Probably", "Not Sure", "Probably Not", "Definitely Not"
-                    ],
-                    "rows": [
-                        {
-                            "value": "use_in_future",
-                            "text": "Will you use our service in the future?"
-                        }, {
-                            "value": "recommend",
-                            "text": "Will you recommend our service to others?"
-                        }
+                },
+                {
+                    "type": "dropdown",
+                    "name": "subject",
+                    "title": "Subject",
+                    "choices": [
+                        "English", 
+                        "Maths", 
+                        "Reasoning",
+                        "GK/GS",
                     ]
-                }, {
+                },{
+                    "type": "editor",
+                    "name": "description",
+                    "title": "Description",
+                },{
                     "type": "comment",
-                    "name": "service_improvements",
-                    "title": "How can we improve our service?"
+                    "name": "hint",
+                    "title": "Hint",
+                },{
+                    "type": "matrix",
+                    "name": "Answer options",
+                    "columns": [
+                        "Definitely", "Probably"
+                    ],
+                    "rows":{
+
+                    }
+                },{
+                    "type":"number",
+                    "name":"mark",
+                    "title":"Marks"
+                },{
+                    "type":"tagbox",
+                    "name":"tags",
+                    "title":"Tags"
+                },{
+                    "type":"comment",
+                    "name":"question_bank",
+                    "title":"Question Bank"
+                },{
+                    "type":"boolean",
+                    "name":"publish",
+                    "title":"Publish",
+                    "isRequired": true
                 }
             ]
         }
