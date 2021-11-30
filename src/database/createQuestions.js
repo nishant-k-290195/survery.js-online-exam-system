@@ -81,7 +81,8 @@ export var createQuestions = {
                     "type":"boolean",
                     "name":"publish",
                     "title":"Publish",
-                    "isRequired": true
+                    "isRequired": true,
+                    "description": "( You need to publish this question, if you want to assign it to an exam / homework. )"
                 }
             ]
         }
