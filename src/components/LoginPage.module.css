@@ -1,0 +1,72 @@
+.section{
+    height: 100vh;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    height: fit-content;
+    width: fit-content;
+}
+
+.credential_wrapper{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, min-content);
+    row-gap: .5rem;
+    align-items: center;
+}
+
+.credential_wrapper input{
+    height: 2.5rem;
+    font-size: 1rem;
+    border: none;
+    border-bottom: 2px solid black;
+    transition: .3s;
+
+}
+.credential_wrapper input:focus{
+    outline: none;
+    border: none;
+    border-bottom: 2px solid blue;
+    transition: .3s;
+}
+
+.credential_wrapper button{
+    height: 2.5rem;
+    background-color: rgb(96, 143, 175);
+    color: white;
+    transition: .3s;
+    border: none;
+}
+
+.credential_wrapper button:hover{
+    background-color: rgb(85, 106, 134);
+    transition: .3s;
+    border: none;
+}
+
+.wrapper{
+    display: grid;
+    padding: 1rem 0;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    column-gap: 1rem;
+}
+
+.wrapper a{
+    font-weight: 800;
+    text-decoration: none;
+    color: rgb(255, 0, 234);
+    background-color: rgba(128, 128, 128, 0.185);
+}
+
+.wrapper button{
+    font-weight: 800;
+    font-size: 1rem;
+    text-decoration: none;
+    color: rgb(255, 0, 234);
+    background-color: rgba(128, 128, 128, 0.185);
+    border: none;
+}

@@ -1,0 +1,5 @@
+{
+    "elements": [
+     { "type": "text", "name": "customerName", "title": "What is your name?", "isRequired": true}
+    ]
+}
