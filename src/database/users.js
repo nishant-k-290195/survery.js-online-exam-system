@@ -1,7 +1,7 @@
 export const users = [
     {
         name:'admin',
-        email:'admin@gmail.com',
+        email:'admin@mindnerves.com',
         password: 'admin'
     }
 ]
