@@ -14,7 +14,7 @@ export var createQuestions = {
                     "type": "dropdown",
                     "name": "exam_mode",
                     "title": "Exam Mode",
-                    "choices": ["Exam", "Homework"]
+                    "choices": ["Exam", "Home Work"]
                 }, 
                 {
                     "type": "dropdown",
@@ -56,15 +56,6 @@ export var createQuestions = {
                     "type": "comment",
                     "name": "hint",
                     "title": "Hint",
-                },{
-                    "type": "matrix",
-                    "name": "Answer options",
-                    "columns": [
-                        "Definitely", "Probably"
-                    ],
-                    "rows":{
-
-                    }
                 },{
                     "type":"number",
                     "name":"mark",
