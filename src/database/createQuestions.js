@@ -49,7 +49,7 @@ export var createQuestions = {
                         "GK/GS",
                     ]
                 },{
-                    "type": "comment",
+                    "type": "editor",
                     "name": "description",
                     "title": "Description",
                 },{
