@@ -60,7 +60,7 @@ export var createQuestions = {
          },
          {
           "type": "dropdown",
-          "name": "question4",
+          "name": "question_type",
           "title": "Question Type",
           "hideNumber": true,
           "choices": [
@@ -130,7 +130,90 @@ export var createQuestions = {
          {
           "type": "panel",
           "name": "panel2",
-          "title": "Answer Options"
+          "elements": [
+           {
+            "type": "paneldynamic",
+            "name": "question4",
+            "visibleIf": "{question_type} = 'item1'",
+            "title": "MCQ",
+            "titleLocation": "hidden",
+            "templateElements": [
+             {
+              "type": "checkbox",
+              "name": "question9",
+              "titleLocation": "hidden",
+              "choices": [
+               {
+                "value": "item1",
+                "text": "Option"
+               }
+              ],
+              "choicesFromQuestionMode": "unselected"
+             },
+             {
+              "type": "comment",
+              "name": "question12",
+              "visible": false,
+              "visibleIf": "{question_type} = 'item1'",
+              "startWithNewLine": false,
+              "titleLocation": "hidden"
+             }
+            ],
+            "panelCount": 2,
+            "minPanelCount": 2,
+            "maxPanelCount": 4,
+            "panelsState": "expanded"
+           },
+           {
+            "type": "comment",
+            "name": "question13",
+            "visible": false,
+            "visibleIf": "{question_type} = 'item3'",
+            "title": "Descriptive",
+            "titleLocation": "left"
+           },
+           {
+            "type": "comment",
+            "name": "question21",
+            "visible": false,
+            "visibleIf": "{question_type} = 'item7'",
+            "title": "Short Answer",
+            "titleLocation": "left"
+           },
+           {
+            "type": "text",
+            "name": "question14",
+            "visible": false,
+            "visibleIf": "{question_type} = 'item2'",
+            "title": "Fill in the blanks"
+           },
+           {
+            "type": "file",
+            "name": "question17",
+            "visible": false,
+            "visibleIf": "{question_type} = 'item5'",
+            "title": "Audio"
+           },
+           {
+            "type": "file",
+            "name": "question18",
+            "visible": false,
+            "visibleIf": "{question_type} = 'item6'",
+            "title": "Video"
+           },
+           {
+            "type": "boolean",
+            "name": "question20",
+            "visible": false,
+            "visibleIf": "{question_type} = 'item4'",
+            "titleLocation": "hidden"
+           }
+          ],
+          "visible": false,
+          "visibleIf": "{question_type} notempty",
+          "questionTitleLocation": "left",
+          "title": "Answer options",
+          "innerIndent": 10
          },
          {
           "type": "text",
