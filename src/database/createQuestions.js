@@ -27,9 +27,14 @@ export var createQuestions = {
           "title": "Exam Mode",
           "hideNumber": true,
           "choices": [
-           "item1",
-           "item2",
-           "item3"
+           {
+            "value": "item1",
+            "text": "Exam"
+           },
+           {
+            "value": "item2",
+            "text": "Home work"
+           }
           ]
          },
          {
@@ -39,9 +44,18 @@ export var createQuestions = {
           "title": "Difficulty Level",
           "hideNumber": true,
           "choices": [
-           "item1",
-           "item2",
-           "item3"
+           {
+            "value": "item1",
+            "text": "Easy"
+           },
+           {
+            "value": "item2",
+            "text": "Medium"
+           },
+           {
+            "value": "item3",
+            "text": "Hard"
+           }
           ]
          },
          {
@@ -50,10 +64,36 @@ export var createQuestions = {
           "title": "Question Type",
           "hideNumber": true,
           "choices": [
-           "item1",
-           "item2",
-           "item3"
-          ]
+           {
+            "value": "item1",
+            "text": "MCQ"
+           },
+           {
+            "value": "item2",
+            "text": "Fill in the blanks"
+           },
+           {
+            "value": "item3",
+            "text": "Descriptive"
+           },
+           {
+            "value": "item4",
+            "text": "Yes/No or True/False"
+           },
+           {
+            "value": "item5",
+            "text": "Audio"
+           },
+           {
+            "value": "item6",
+            "text": "Video"
+           },
+           {
+            "value": "item7",
+            "text": "Short Answer"
+           }
+          ],
+          "otherText": "Video"
          },
          {
           "type": "dropdown",
@@ -62,9 +102,18 @@ export var createQuestions = {
           "title": "Subject",
           "hideNumber": true,
           "choices": [
-           "item1",
-           "item2",
-           "item3"
+           {
+            "value": "item1",
+            "text": "Physics"
+           },
+           {
+            "value": "item2",
+            "text": "Chemistry"
+           },
+           {
+            "value": "item3",
+            "text": "Maths"
+           }
           ]
          },
          {
