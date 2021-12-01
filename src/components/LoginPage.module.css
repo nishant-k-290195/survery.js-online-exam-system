@@ -3,11 +3,14 @@
     display: grid;
     align-items: center;
     justify-content: center;
+    background-color: rgb(0, 20, 26);
 }
 
 .container{
     height: fit-content;
     width: fit-content;
+    padding: 2rem;
+    color: white;
 }
 
 .credential_wrapper{
