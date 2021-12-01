@@ -1,6 +1,6 @@
 import React from 'react'
 import * as Survey from "survey-react";
-import * as widgets from "surveyjs-widgets";
+// import * as widgets from "surveyjs-widgets";
 import "survey-react/modern.css";
 import {createQuestions} from '../database/createQuestions'
 
@@ -12,7 +12,7 @@ const CreateQuestionsPage = () => {
     Survey.StylesManager.applyTheme("modern");
 
     const survey = new Survey.Model(createQuestions);
-    
+
     return (
         <div>
             <Survey.Survey 
