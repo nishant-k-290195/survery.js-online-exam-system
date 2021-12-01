@@ -1,4 +1,4 @@
-export var createQuestions ={
+export var createQuestions = {
     "title": "New Question",
     "description": "This form helps you to create a question for a question type, including exam mode, difficulty level, question bank and tags. Tags helps you to group the questions and find it easily from a pool.",
     "pages": [
@@ -6,155 +6,108 @@ export var createQuestions ={
       "name": "page1",
       "elements": [
        {
-        "type": "radiogroup",
-        "name": "question2",
-        "title": "Language",
-        "titleLocation": "left",
-        "choices": [
-         {
-          "value": "item1",
-          "text": "English"
-         }
-        ]
-       },
-       {
         "type": "panel",
-        "name": "panel2",
+        "name": "panel1",
         "elements": [
          {
-          "type": "dropdown",
-          "name": "question3",
-          "title": "Exam Mode",
-          "titleLocation": "left",
+          "type": "radiogroup",
+          "name": "question1",
+          "title": "Language",
+          "hideNumber": true,
           "choices": [
            {
             "value": "item1",
-            "text": "Exam"
-           },
-           {
-            "value": "item2",
-            "text": "Home Work"
+            "text": "English"
            }
           ]
          },
          {
           "type": "dropdown",
-          "name": "question1",
-          "title": "Question Type",
+          "name": "question2",
+          "title": "Exam Mode",
+          "hideNumber": true,
           "choices": [
-           {
-            "value": "item1",
-            "text": "Multiple Choice"
-           },
-           {
-            "value": "item2",
-            "text": "Multiple Selection"
-           },
-           {
-            "value": "item3",
-            "text": "Fill in the blanks"
-           }
+           "item1",
+           "item2",
+           "item3"
           ]
-         }
-        ],
-        "questionTitleLocation": "left"
-       },
-       {
-        "type": "panel",
-        "name": "panel1",
-        "elements": [
+         },
+         {
+          "type": "dropdown",
+          "name": "question3",
+          "startWithNewLine": false,
+          "title": "Difficulty Level",
+          "hideNumber": true,
+          "choices": [
+           "item1",
+           "item2",
+           "item3"
+          ]
+         },
          {
           "type": "dropdown",
           "name": "question4",
-          "title": "Difficulty Level",
+          "title": "Question Type",
+          "hideNumber": true,
           "choices": [
-           {
-            "value": "item1",
-            "text": "Easy"
-           },
-           {
-            "value": "item2",
-            "text": "Medium"
-           },
-           {
-            "value": "item3",
-            "text": "Hard"
-           }
+           "item1",
+           "item2",
+           "item3"
           ]
          },
          {
           "type": "dropdown",
           "name": "question5",
+          "startWithNewLine": false,
           "title": "Subject",
+          "hideNumber": true,
           "choices": [
-           {
-            "value": "item1",
-            "text": "Maths"
-           },
-           {
-            "value": "item2",
-            "text": "Physics"
-           },
+           "item1",
+           "item2",
            "item3"
           ]
-         }
-        ],
-        "questionTitleLocation": "left",
-        "startWithNewLine": false
-       },
-       {
-        "type": "panel",
-        "name": "panel3",
-        "elements": [
-         {
-          "type": "comment",
-          "name": "question6",
-          "title": "Description"
          },
          {
           "type": "comment",
           "name": "question7",
-          "title": "Hint"
-         }
-        ]
-       },
-       {
-        "type": "panel",
-        "name": "panel4",
-        "elements": [
+          "title": "Description"
+         },
          {
-          "type": "paneldynamic",
+          "type": "comment",
+          "name": "question6",
+          "title": "Hint",
+          "hideNumber": true
+         },
+         {
+          "type": "panel",
+          "name": "panel2",
+          "title": "Answer Options"
+         },
+         {
+          "type": "text",
           "name": "question8",
-          "title": "MCQ"
+          "title": "Mark",
+          "inputType": "number"
+         },
+         {
+          "type": "comment",
+          "name": "question10",
+          "title": "Question Bank",
+          "hideNumber": true
+         },
+         {
+          "type": "boolean",
+          "name": "question11",
+          "title": "Publish",
+          "hideNumber": true
          }
         ],
-        "title": "Answer options"
-       },
-       {
-        "type": "panel",
-        "name": "panel5"
-       },
-       {
-        "type": "text",
-        "name": "question9",
-        "title": "Mark",
-        "titleLocation": "left",
-        "inputType": "number",
-        "min": "0"
-       },
-       {
-        "type": "comment",
-        "name": "question10",
-        "title": "Question Bank"
-       },
-       {
-        "type": "boolean",
-        "name": "question11",
-        "title": "Publish"
+        "questionTitleLocation": "left"
        }
-      ],
-      "questionTitleLocation": "left"
+      ]
      }
     ],
+    "showQuestionNumbers": "off",
+    "completeText": "Create",
     "widthMode": "responsive"
    }
