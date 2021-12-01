@@ -57,7 +57,8 @@ export var createQuestions = {
                     "name": "hint",
                     "title": "Hint",
                 },{
-                    "type":"number",
+                    "type":"text",
+                    "inputType": "number",
                     "name":"mark",
                     "title":"Marks"
                 },{
